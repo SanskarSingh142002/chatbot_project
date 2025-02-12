@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.Header{
+    display: flex;
+    color: black;
+    background: blueviolet;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px; 
+}
+.Header img{
+    float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right:auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+}
+.Header a{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background-color: rgb(27, 239, 218);
+    font-size: 18px;
+}
+
+/* Product Section Styling */
+.products {
+    margin-bottom: 40px;
+}
+
+/* Brand Title Styling */
+.products h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services h4{
+    align-items: center;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+/* List Styling */
+ul {
+    display: grid;
+    height: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 200px;
+    list-style: none;
+}
+
+/* List Item Styling */
+li {
+    background-color: #fff;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+li img {
+    width: 250%;
+    text-align: center;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product Name Styling */
+li span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Apple Specific Styles */
+.services {
+    background-color: #f0f0f0;
+    
+}
+
+

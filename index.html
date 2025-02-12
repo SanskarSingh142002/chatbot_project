@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sanskar Singh--CHATBOT</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="Header"> Sanskar Singh   <img src="./img1.jpg" alt="not available">
+                <a href="./about.html">AboutUs</a>
+                <a href="./services.html">Services</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+            <div class="Greet">
+                <h1>Hello visitor !! Welcome to My Home Page</h1>
+                <h3>Hi!! I am sanskar Singh a passionate lover of programming trying to learn about this world and will do great in future!!</h3>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Chatbot Popup Button -->
+    <div class="chat-popup" id="chatPopup" onclick="openChat()">
+        <img src="chatbot-icon.jpg" alt="Chat" class="chat-icon" />
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-header">
+            <h3>Chat with us</h3>
+            <span class="close-btn" onclick="closeChat()">&times;</span>
+        </div>
+        <div class="chat-body">
+            <div id="chatMessages" class="chat-messages"></div>
+            <textarea id="chatInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter'){ sendMessage(); }"></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
